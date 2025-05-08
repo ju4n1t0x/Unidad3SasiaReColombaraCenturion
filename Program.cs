@@ -9,11 +9,11 @@ namespace Unidad3SasiaReColombaraCenturion
         {
           
             //Llamo la funcion del ejercicio 2
-            int numero = ingresarNumero("Ingrese un numero");
-            Console.WriteLine("El numero ingresado es: " + numero);
+            int numero = ingresarNumero("Ingrese un nÚmero entero: ");
+            Console.WriteLine("\nEl número ingresado es: " + numero + "\n");
 
             //Llamo la funcion del ejercicio 3
-            string mensaje = mensajeComoParametro("Soy el mensaje ingresado como parametro");
+            string mensaje = mensajeComoParametro("Soy el mensaje ingresado como parámetro");
 
 
             //Llamo la funcion del ejercicio 4
@@ -39,7 +39,7 @@ namespace Unidad3SasiaReColombaraCenturion
             Console.WriteLine(mensaje);
             while(!int.TryParse(Console.ReadLine(), out numero))
             {
-                Console.Write("El valor ingresado no es un numero, intente nuevamente");
+                Console.Write("El valor ingresado no es un número entero, intente nuevamente\n");
             }
             return numero;
             }
@@ -60,15 +60,15 @@ namespace Unidad3SasiaReColombaraCenturion
         static void menorOIgual(ref int numero, ref string mensaje) {
             if (numero < 50)
             {
-                mensaje = "El numero ingresado es menor a 50";
+                mensaje = "El número " + numero + " es menor a 50";
 
             }
             else if (numero == 50)
             {
-                mensaje = "El numero ingresado es igual a 50";
+                mensaje = "El número ingresado es igual a 50";
             }
             else {
-                mensaje = "El numero ingresado es mayor a 50"; ;
+                mensaje = "El número " + numero + " es mayor a 50"; ;
             }
             mensajeComoParametro(mensaje);
         }
@@ -83,11 +83,11 @@ namespace Unidad3SasiaReColombaraCenturion
         {
             if (numero %7 == 0)
             {
-                mensaje = "El numero ingresado es multiplo de 7";
+                mensaje = "El número " + numero + " es múltiplo de 7";
 
             }
             else {
-                mensaje = "El numero ingresado no es multiplo de 7"; ;
+                mensaje = "El número " + numero + " no es múltiplo de 7"; ;
             }
             mensajeComoParametro(mensaje);
         }
